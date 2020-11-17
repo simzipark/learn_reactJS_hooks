@@ -2,7 +2,7 @@ import React, { useState } from "react"
 
 
 
-const Hook = () => {
+const Input = () => {
     const InputHook = (initValue, validator) => {
         const [value, setValue] = useState(initValue);
 
@@ -29,8 +29,8 @@ const Hook = () => {
     return (
         <div>
             <input placeholder="Input Here💛💛" {...name}></input>
-            <div>🍋 Your Input : {name.value}</div>
+            <div>Your Input : {name.value}</div>
         </div>
     )
 };
-export default Hook;
+export default Input;

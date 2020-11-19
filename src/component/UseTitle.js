@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 
-const Title = () => {
+const UseTitle = () => {
 
     const useTitle = (initTitle) => {
         const [title, setTitle] = useState(initTitle);
@@ -21,4 +21,4 @@ const Title = () => {
     )
 }
 
-export default Title;
+export default UseTitle;

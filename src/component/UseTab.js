@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 
-const Content = () => {
+const UseTab = () => {
     const content = [
         {
             id: 1,
@@ -38,4 +38,4 @@ const Content = () => {
     )
 }
 
-export default Content;
+export default UseTab;

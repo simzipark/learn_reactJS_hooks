@@ -2,7 +2,7 @@ import React, { useState } from "react"
 
 
 
-const Input = () => {
+const UseInput = () => {
     const InputHook = (initValue, validator) => {
         const [value, setValue] = useState(initValue);
 
@@ -23,7 +23,7 @@ const Input = () => {
 
     // validator function list
     const valLength = (value) => value.length < 10;
-    const notHash = (value) => !value.includes("#");
+    // const notHash = (value) => !value.includes("#");
 
     const name = InputHook("", valLength);
     return (
@@ -33,4 +33,4 @@ const Input = () => {
         </div>
     )
 };
-export default Input;
+export default UseInput;

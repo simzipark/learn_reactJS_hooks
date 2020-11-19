@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 
-const Effect = () => {
+const UseBtn = () => {
     const [numberA, setNumber] = useState(0);
     const [numberB, setANumber] = useState(0);
 
@@ -19,4 +19,4 @@ const Effect = () => {
     )
 }
 
-export default Effect;
+export default UseBtn;

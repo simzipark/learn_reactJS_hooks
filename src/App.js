@@ -6,6 +6,11 @@ import UseTitle from './component/UseTitle'
 import UseClick from './component/UseClick'
 import UseConfirm from './component/UseConfirm'
 import UsePreventLeave from './component/UsePreventLeave'
+import UseBeforeLeave from './component/UseBeforeLeave'
+import UseFadeIn from './component/UseFadeIn'
+import UseNetwork from './component/UseNetwork'
+import UseScroll from './component/UseScroll'
+import UseFullScreen from './component/UseFullScreen'
 
 function App() {
   return (
@@ -26,6 +31,16 @@ function App() {
         <UseConfirm />
         <h4>🍊 custom hook : 브라우저 종료 시</h4>
         <UsePreventLeave />
+        <h4>🍊 custom hook : 창에서 벗어날 시</h4>
+        <UseBeforeLeave />
+        <h4>🍊 custom hook : 사라짐 효과</h4>
+        <UseFadeIn />
+        <h4>🍊 custom hook : on/offline</h4>
+        <UseNetwork />
+        <h4>🍊 custom hook : 스크롤 이동</h4>
+        <UseScroll />
+        <h4>🍊 custom hook : 창 최대/최소</h4>
+        <UseFullScreen />
       </header>
     </div >
   );

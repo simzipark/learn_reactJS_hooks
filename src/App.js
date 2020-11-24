@@ -11,8 +11,14 @@ import UseFadeIn from './component/UseFadeIn'
 import UseNetwork from './component/UseNetwork'
 import UseScroll from './component/UseScroll'
 import UseFullScreen from './component/UseFullScreen'
+import UseNotification from './component/UseNotification'
+import UseAxios from './component/UseAxios'
+import useTitle from '@nooks/use-title' //npm install @nooks/use-title --save 로 dependency 추가
 
 function App() {
+  useTitle("🌈REACT HOOKS🔥");
+  const { loading, error, data, refetch } = UseAxios({ url: "https://yts.mx/api/v2/list_movies.json?sort_by=rating" });
+  // console.log(`Loading : ${loading} \nError : ${error} \nData : ${JSON.stringify(data)}`);
   return (
     <div className="App">
       <header className="App-header">
@@ -41,6 +47,13 @@ function App() {
         <UseScroll />
         <h4>🍊 custom hook : 창 최대/최소</h4>
         <UseFullScreen />
+        <h4>🍊 custom hook : 브라우저 알람</h4>
+        <UseNotification />
+        <h4>🍊 custom hook : Axios</h4>
+        <p>LOADING : {loading && "Loading...💤"}</p>
+        {/* <p>LOADING : {loading ? "Loading...💤" : "Done!"}</p> */}
+        <p>DATA : {data && data.status}</p>
+        <button onClick={refetch}>Fetch</button>
       </header>
     </div >
   );
